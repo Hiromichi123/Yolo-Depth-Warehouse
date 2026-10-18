@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Whole-pile depth labels, keys relative to dataset root",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "required": ["pile_id", "average_depth", "front_count", "total_count", "group_bbox"],
+    "properties": {
+      "pile_id": {"type": "string", "minLength": 1},
+      "average_depth": {"type": "number", "minimum": 1},
+      "front_count": {"type": "integer", "minimum": 1},
+      "total_count": {"type": "integer", "minimum": 1},
+      "group_bbox": {"type": "array", "items": {"type": "number", "minimum": 0}, "minItems": 4, "maxItems": 4},
+      "chain_depths": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+      "camera_id": {"type": "string"},
+      "package_type": {"type": "string"},
+      "view_direction": {"type": "string"}
+    }
+  }
+}

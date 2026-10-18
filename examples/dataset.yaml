@@ -1,0 +1,7 @@
+# Paths are relative to this YAML. Images must already be single-pile ROIs.
+path: ../data/piles
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: package

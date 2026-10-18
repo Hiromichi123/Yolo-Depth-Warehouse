@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolo-seg-global-depth"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["torch==2.5.1", "torchvision==0.20.1", "ultralytics==8.3.40", "numpy==1.26.4", "opencv-python==4.10.0.84", "onnx==1.17.0", "onnxruntime==1.20.1"]
+
+[project.scripts]
+pile-depth = "pile_depth.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pile_depth*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

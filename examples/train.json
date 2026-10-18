@@ -1,0 +1,13 @@
+{
+  "images/train/pile_001.png": {
+    "pile_id": "pile_001",
+    "average_depth": 2.5,
+    "front_count": 2,
+    "total_count": 5,
+    "group_bbox": [0, 0, 640, 480],
+    "chain_depths": [2, 3],
+    "camera_id": "camera_01",
+    "package_type": "bag",
+    "view_direction": "front-left"
+  }
+}
